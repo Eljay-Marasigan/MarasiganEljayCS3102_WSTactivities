@@ -1,0 +1,96 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+}
+
+.typing-effect {
+    font-family: 'Press Start 2P', cursive;
+    color: #00ff99; 
+    font-size: 3.5rem;
+    text-shadow: 0 0 40px #00ff99;
+    display: inline-block;
+    border-right: 3px solid #00ff99;  
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--white);
+  }
+}
+
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.flexbox-item {
+    flex: 1;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 1rem;
+    color: #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(0, 255, 255, 0.5); 
+}
+
+.flexbox-item h2 {
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #ff0099; /* Neon pink text color */
+}
+
+.flexbox-item p {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.flexbox-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.5); 
+
+a {
+    color: #00ff99; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00cc99; 
+}
